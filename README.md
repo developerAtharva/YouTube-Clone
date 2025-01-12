@@ -1,4 +1,4 @@
-# YouTube-Clone
+# YouTube-Clone (Click here for demo - https://developeratharva.github.io/YouTube-Clone/)
 
 This project is a simplified YouTube clone created as part of my learning journey in HTML and CSS. The focus of this project was to strengthen my understanding of front-end design principles using only HTML and CSS.
 
