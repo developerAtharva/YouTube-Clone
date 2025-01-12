@@ -1,0 +1,167 @@
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+  margin-top: 25px;
+  margin-left: 115px;
+}
+
+@media(min-width: 1200.1px) {
+  .video-grid {
+    margin-left: 330px;
+  }
+}
+
+@media(max-width: 800px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(min-width: 801px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-preview {
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.video-details-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 10px;
+}
+
+.profile-picture {
+  width: 40px;
+  border-radius: 30px;
+}
+
+.profile-picture-container {
+  position: relative;
+  display: inline-block;
+}
+
+.channel-picture-tooltip {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.388);
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  white-space: nowrap;
+  margin-top: 1000px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.profile-picture-container:hover .channel-picture-tooltip {
+  opacity: 1;
+}
+
+.channel-picture-tooltip img {
+  width: 60px;
+  border-radius: 40px;
+  margin-left: 12px;
+}
+
+.channel-info {
+  margin-left: 10px;
+}
+
+.channel-info .name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.channel-info .subscribers {
+  color: gray;
+  font-size: 16px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@media(min-width: 1000px) {
+  .video-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.video-link {
+  text-decoration: none;
+  color: black;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+@media(min-width: 1000px) {
+  .video-author, .video-stats {
+    font-size: 14px;
+  }
+}
+
+.video-author {
+  margin-top: 12px;
+}
+
+.video-author a {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+}
+
+.video-author:hover a {
+  color: black;
+}
+
+.video-stats {
+  margin-top: 6px;
+}
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500; 
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+
+  position: absolute;
+  bottom: 10px;
+  right: 4px;
+}
